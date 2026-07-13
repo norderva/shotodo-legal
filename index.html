@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shotodo — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 680px; margin: 0 auto; padding: 32px 20px 64px;
+    line-height: 1.6; color: #1c1c1e; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ececee; background: #101014; }
+    a { color: #7ab0ff; }
+  }
+  h1 { font-size: 1.7em; margin-bottom: 0.2em; }
+  h2 { font-size: 1.15em; margin-top: 1.8em; }
+  .date { color: #8e8e93; font-size: 0.95em; }
+  strong { font-weight: 650; }
+  a { color: #2469f0; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy — Shotodo</h1>
+<p class="date">Effective date: July 13, 2026</p>
+
+<p>Shotodo (“the app”) is developed and published by Derva (“we”, “us”). This policy explains what information the app handles and where it goes. The short version: <strong>we don’t collect your data — we don’t even have servers.</strong></p>
+
+<h2>What we collect</h2>
+<p>Nothing. Shotodo has no accounts, no analytics, no telemetry, no crash reporting, and no backend. We never see your screenshots, your extracted text, your reminders, or anything else.</p>
+
+<h2>Screenshots and text recognition</h2>
+<p>When you select a screenshot for analysis, text recognition (OCR) runs <strong>entirely on your device</strong> using Apple’s Vision framework. Your images never leave your iPhone.</p>
+
+<h2>Text sent to AI providers</h2>
+<p>To classify what a screenshot means, the app sends the <strong>extracted text only — never the image —</strong> to the AI provider you select:</p>
+<ul>
+  <li><strong>Groq</strong> (default, using the app’s built-in free tier or your own key)</li>
+  <li><strong>OpenAI</strong>, <strong>Anthropic</strong>, <strong>Google AI</strong>, or <strong>xAI</strong> (only if you add your own API key)</li>
+</ul>
+<p>This text is transmitted directly from your device to the provider you chose, and its handling is governed by that provider’s privacy policy:
+<a href="https://groq.com/privacy-policy/">Groq</a>,
+<a href="https://openai.com/policies/privacy-policy/">OpenAI</a>,
+<a href="https://www.anthropic.com/legal/privacy">Anthropic</a>,
+<a href="https://policies.google.com/privacy">Google</a>,
+<a href="https://x.ai/legal/privacy-policy">xAI</a>.
+We are not a party to that transmission and receive no copy of it. Avoid analyzing screenshots containing information you would not send to your chosen provider.</p>
+
+<h2>API keys</h2>
+<p>API keys you add are stored in the <strong>iOS Keychain</strong> on your device. They are sent only to the provider they belong to, to authenticate your requests. They are never transmitted to us or anyone else.</p>
+
+<h2>Reminders, Calendar, and Contacts</h2>
+<p>The app writes to Apple Reminders, Calendar, and Contacts <strong>only with your permission and only when you tap Save</strong> on the confirmation screen. That data lives in Apple’s apps, under Apple’s privacy protections. Shotodo keeps no copy beyond your on-device history.</p>
+
+<h2>Analysis history</h2>
+<p>Your last 50 analyses (compressed thumbnail, extracted text, and results) are stored <strong>locally on your device</strong> so you can review them in the Activity tab. You can delete individual entries or clear the whole history at any time. This data never leaves your device.</p>
+
+<h2>Subscriptions</h2>
+<p>Subscriptions are processed by Apple through your Apple Account. We never see your payment details. Manage or cancel anytime in Settings › Apple Account › Subscriptions.</p>
+
+<h2>Children</h2>
+<p>Shotodo is not directed at children under 13 and does not knowingly process data from them.</p>
+
+<h2>Changes to this policy</h2>
+<p>If we change this policy, we will update this page and the effective date above. Material changes will be noted in the app’s release notes.</p>
+
+<h2>Contact</h2>
+<p>Questions? Email <a href="mailto:privacy@norderva.com">privacy@norderva.com</a>.</p>
+</body>
+</html>
