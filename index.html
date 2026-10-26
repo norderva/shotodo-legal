@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shotodo — Privacy Policy</title>
+<title>Shotodo Privacy Policy</title>
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -23,13 +23,13 @@
 </style>
 </head>
 <body>
-<h1>Privacy Policy — Shotodo</h1>
-<p class="date">Effective date: October 7, 2026</p>
+<h1>Shotodo Privacy Policy</h1>
+<p class="date">Effective date: October 25, 2026</p>
 
-<p>Shotodo (“the app”) is developed and published by Derva (“we”, “us”). This policy explains what information the app handles and where it goes. The short version: <strong>we don’t collect your data — we don’t even have servers.</strong></p>
+<p>Shotodo (“the app”) is developed and published by Derva (“we”, “us”). This policy explains what information the app handles and where it goes. The short version: <strong>your screenshots never leave your iPhone, and we don’t keep your text.</strong></p>
 
 <h2>What we collect</h2>
-<p>Nothing. Shotodo has no accounts, no analytics, no telemetry, no crash reporting, and no backend. We never see your screenshots, your extracted text, your reminders, or anything else.</p>
+<p>Nothing we keep about you. Shotodo has no accounts, no analytics, no telemetry, no crash reporting and no advertising. We never see your screenshots, your reminders, your events or your contacts.</p>
 
 <h2>Screenshots and text recognition</h2>
 <p>When you select a screenshot for analysis, text recognition (OCR) runs <strong>entirely on your device</strong> using Apple’s Vision framework. Your images never leave your iPhone.</p>
@@ -37,19 +37,17 @@
 <h2>On-device AI</h2>
 <p>On iPhones that support Apple Intelligence, Shotodo uses the on-device model built into iOS by default. In this mode the extracted text is processed on your iPhone and <strong>nothing is sent to any server</strong>.</p>
 
-<h2>Text sent to AI providers</h2>
-<p>If you choose a cloud provider, the app sends the <strong>extracted text only — never the image —</strong> to the AI provider you select:</p>
-<ul>
-  <li><strong>Groq</strong> (using the app’s built-in free tier or your own key)</li>
-  <li><strong>OpenAI</strong>, <strong>Anthropic</strong>, <strong>Google AI</strong>, or <strong>xAI</strong> (only if you add your own API key)</li>
-</ul>
-<p>This text is transmitted directly from your device to the provider you chose, and its handling is governed by that provider’s privacy policy:
+<h2>Shotodo Cloud</h2>
+<p>On iPhones without on-device AI, Shotodo uses Shotodo Cloud, the AI included with your subscription. The app sends the <strong>extracted text only (never the image)</strong> and Apple’s signed record of your subscription to our service on Cloudflare (Cloudflare Workers AI). The text is processed to return the reminders, events and contacts it contains, and is <strong>not stored or logged</strong>. To enforce the daily limit, the service keeps a one-way hash of your subscription’s ID and a count of today’s analyses for 48 hours. Cloudflare’s handling is described in its <a href="https://www.cloudflare.com/privacypolicy/">privacy policy</a>. If Shotodo Cloud is briefly unavailable, the app may send the same text to Groq as a backup (<a href="https://groq.com/privacy-policy/">Groq privacy policy</a>).</p>
+
+<h2>Your own AI provider</h2>
+<p>If you add your own API key for <strong>Groq</strong>, <strong>OpenAI</strong>, <strong>Anthropic</strong>, <strong>Google AI</strong> or <strong>xAI</strong>, the extracted text (never the image) goes directly from your iPhone to that provider, under its privacy policy:
 <a href="https://groq.com/privacy-policy/">Groq</a>,
 <a href="https://openai.com/policies/privacy-policy/">OpenAI</a>,
 <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>,
 <a href="https://policies.google.com/privacy">Google</a>,
 <a href="https://x.ai/legal/privacy-policy">xAI</a>.
-We are not a party to that transmission and receive no copy of it. Avoid analyzing screenshots containing information you would not send to your chosen provider.</p>
+We are not part of that transmission and receive no copy. Avoid analyzing screenshots containing information you would not send to your chosen provider.</p>
 
 <h2>API keys</h2>
 <p>API keys you add are stored in the <strong>iOS Keychain</strong> on your device. They are sent only to the provider they belong to, to authenticate your requests. They are never transmitted to us or anyone else.</p>
